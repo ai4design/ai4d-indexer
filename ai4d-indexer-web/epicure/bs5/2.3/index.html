@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <title>Epicure - Bootstrap 5 template for restaurants</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">    
+    <link rel="shortcut icon" href="favicon.ico">  
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Dancing+Script:400,700' rel='stylesheet' type='text/css'>
+    <!-- FontAwesome JS -->
+    <script defer src="assets/fontawesome/js/all.js"></script>
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">   
+    <!-- Plugins CSS -->   
+    <link rel="stylesheet" href="assets/plugins/simplelightbox/dist/simple-lightbox.min.css">
+    <link rel="stylesheet" href="assets/plugins/vanillajs-datepicker/css/datepicker-bs4.min.css">
+    
+    <!-- Theme CSS -->
+    <link id="theme-style" rel="stylesheet" href="assets/css/theme-1.css">
+
+</head> 
+
+<body>     
+    <!-- ******HEADER****** --> 
+    <header id="header" class="header fixed-top">  
+        <div class="container ">       
+            <nav class="main-nav navbar navbar-expand-md" role="navigation">
+                <button class="navbar-toggler navbar-dark " type="button" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="toggle-title">Menu</span>
+                    <span class="navbar-toggler-icon"></span>
+                </button>  
+                <div id="navbar-collapse" class="navbar-collapse collapse  text-center justify-content-center">
+                    <ul class="nav navbar-nav">
+                        <li class="nav-item"><a class="nav-link scrollto" href="index.html#hero">Home</a></li>
+                        <li class="nav-item"><a class="nav-link scrollto" href="index.html#menus">Menus</a></li>
+                        <li class="nav-item"><a class="nav-link scrollto" href="index.html#news">News &amp; Events</a></li>                                              
+                        <li class="nav-item"><a class="nav-link scrollto" href="index.html#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html#" data-bs-toggle="modal" data-bs-target="#reserve-modal">Reservations</a></li>
+                        <li class="nav-item"><a class="nav-link scrollto" href="index.html#contact">Contact</a></li>
+                    </ul><!--//nav-->
+                </div><!--//navabr-collapse-->
+            </nav><!--//main-nav-->
+        </div><!--//container-->
+    </header><!--//header-->
+    
+    <div id="hero" class="hero-section">
+        <div class="content-wrapper">
+            <div class="container text-center">
+                <div class="branding">
+                    <div class="script">Welcome to</div>
+                    <h1 class="logo text-center">
+                        <img class="img-fluid block-center" src="assets/images/logo.png" alt="logo" />
+                    </h1><!--//logo-->
+                    <div class="tagline text-center">
+                        <ul class="list me-auto ms-auto">
+                            <li class="type">Cafe</li>
+                            <li role="presentation" class="dot"><i class="fas fa-circle"></i></li>
+                            <li class="type">Restaurant</li>
+                            <li role="presentation" class="dot"><i class="fas fa-circle"></i></li>
+                            <li class="type">Wine Bar</li>
+                        </ul>
+                    </div><!--//tagline-->
+                </div><!--//branding-->
+                <h2 class="promo-line">
+                    Promoting your restaurant in a powerful way
+                </h2><!--//promo-->
+                <div class="cta-container">
+                    <button type="button" class="btn btn-theme-primary" data-bs-toggle="modal" data-bs-target="#reserve-modal">Book a Table</button>
+                </div><!--//cta-container-->
+            </div><!--//container-->
+        </div><!--//content-wrapper-->
+        
+        <div class="scroll-link text-center">
+            <p><a class="scrollto" href="index.html#menus">View Our Menus</a></p>
+            <a class="arrow-holder animate scrollto" href="index.html#menus"><img src="assets/images/arrow.svg" alt="" /></a>
+        </div>
+        
+        <div class="bg-slider-wrapper">
+
+            <div id="bg-carousel" class="bg-carousel carousel slide carousel-fade" data-bs-ride="carousel">
+			    <div class="carousel-inner carousel-zoom">
+					<div class="carousel-item slide-1 active">
+					    <div class="d-flex align-items-center justify-content-center min-vh-100">
+		                   
+		                </div>
+					</div>
+					<div class="carousel-item slide-2" data-bs-interval="6000">
+					    <div class="d-flex align-items-center justify-content-center min-vh-100">
+		                   
+		                </div>
+					</div>
+					<div class="carousel-item slide-3" data-bs-interval="6000">
+					    <div class="d-flex align-items-center justify-content-center min-vh-100">
+		                   
+		                </div>
+					</div>
+	
+				</div>
+			</div><!--//bg-carousel-->
+        </div><!--//bg-slider-wrapper-->
+    </div><!--//hero-section-->
+    
+    <!-- ******Reviews Section****** -->
+    <section id="reviews" class="reviews-section section">
+        <div class="container text-center">
+            <div id="reviews-carousel" class="carousel slide" data-bs-ride="carousel">
+                <!--//wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active">
+                        <h3 class="review-title"><i class="fas fa-quote-left"></i>This is the best restaurant in London</h3>
+                        <blockquote class="review ms-auto me-auto">
+                            <p>The food there is exquisite. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis rhoncus porta libero, id maximus eros maximus quis. Etiam imperdiet fringilla massa eget efficitur.</p>
+                        </blockquote><!--//review-->
+                        <div class="source">
+                            <img class="profile" src="assets/images/people/profile-1.png" alt="" />
+                            <div class="name">Dylan Davis</div>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div><!--//rating-->
+                        </div><!--//source-->    
+                    </div><!--//item-->
+                    <div class="carousel-item">
+                        <h3 class="review-title"><i class="fas fa-quote-left"></i>Amazing service and food</h3>
+                        <blockquote class="review ms-auto me-auto">
+                            <p>Excellent steak consectetur adipiscing elit. Duis rhoncus porta libero, id maximus eros maximus quis. Etiam imperdiet fringilla massa eget efficitur.</p>
+                        </blockquote><!--//review-->
+                        <div class="source">
+                            <img class="profile" src="assets/images/people/profile-2.png" alt="" />
+                            <div class="name">Annie Wang</div>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div><!--//rating-->
+                        </div><!--//source-->    
+                    </div><!--//item-->
+                    <div class="carousel-item">
+                        <h3 class="review-title"><i class="fas fa-quote-left"></i>Exceeds expectations</h3>
+                        <blockquote class="review ms-auto me-auto">
+                            <p>Our high expectations were met! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis rhoncus porta libero, id maximus eros maximus quis. Etiam imperdiet fringilla massa eget efficitur.</p>
+                        </blockquote><!--//review-->
+                        <div class="source">
+                            <img class="profile" src="assets/images/people/profile-3.png" alt="" />
+                            <div class="name">James Cooper</div>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div><!--//rating-->
+                        </div><!--//source-->    
+                    </div><!--//item-->
+                </div><!--//carousel-inner-->
+                
+                <!--//Indicators-->
+                <div class="carousel-indicators">
+                    <button type="button" class="active align-self-baseline" data-bs-target="#reviews-carousel" data-bs-slide-to="0" aria-current="true" aria-label="Slide 1">
+                        <img class="press-logo" src="assets/images/press/press-1.png"  alt="" />
+                    </button>
+                    <button type="button" class="align-self-baseline" data-bs-target="#reviews-carousel" data-bs-slide-to="1" aria-label="Slide 2">
+                        <img class="press-logo" src="assets/images/press/press-2.png" alt="" />
+                    </button>
+                    <button type="button" class="align-self-baseline" data-bs-target="#reviews-carousel" data-bs-slide-to="2" aria-label="Slide 3">
+                        <img class="press-logo" src="assets/images/press/press-3.png"  alt="" />
+                    </button>
+                </div><!--//carousel-indicators-->
+                
+            </div><!--//reviews-carousel-->
+        </div><!--//container-->
+    </section><!--//reviews-->
+       
+    <!-- ******Menus section****** -->
+    <div id="menus" class="menus-section">
+        <div class="container text-center">
+            <h2 class="section-title">
+                <span class="script">Discover</span>
+                <span class="title-text">Our Menus</span>
+                <span class="title-border"></span>
+            </h2>
+            <div class="intro ms-auto me-auto">
+                <p>At Epicure you will find morden European dishes lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec.</p>
+            </div>
+            <div class="menu-links">
+                <ul class="list-inline me-auto ms-auto">
+                    <li class="list-inline-item"><a class="btn btn-theme-secondary" href="assets/media/pdf-file.pdf" target="_blank">Lunch Menu</a></li>
+                    <li class="list-inline-item"><a class="btn btn-theme-secondary" href="assets/media/pdf-file.pdf" target="_blank">Dinner Menu</a></li>
+                    <li class="list-inline-item"><a class="btn btn-theme-secondary" href="assets/media/pdf-file.pdf" target="_blank">Wine List</a></li>
+                </ul>
+            </div><!--//menu-links-->
+            <div class="featured">
+                <h3 class="title script">Signature Dishes</h3>
+                <div class="media-wrapper row">
+                    <div class="col-left col-12 col-md-8">
+                        <div class="row">
+                            <div class="col-12"> 
+                                <div class="media-item">
+                                    <div class="media-item-inner">
+                                        <img class="img-fluid" src="assets/images/menu/media-1.jpg" alt="">
+                                        <a class="mask" href="assets/images/menu/media-1-lg.jpg" >
+                                            <span class="mask-inner">
+                                                <span class="item-title script">Charbroiled Sterling Silver Pork Chop</span>
+                                                <span class="desc">Description about the dish goes here luctus leo, vitae tempor nulla. Nam iaculis turpis ac cursus interdum.</span>
+                                                <span class="price">£46</span>
+                                            </span><!--//mask-inner-->
+                                        </a><!--//mask-->
+                                    </div><!--//media-item-inner-->
+                                </div><!--//media-item-->
+                            </div>
+                            
+                            <div class="col-12 col-md-6">    
+                                <div class="media-item">
+                                    <div class="media-item-inner">
+                                        <img class="img-fluid" src="assets/images/menu/media-2.jpg" alt="">
+                                        <a class="mask" href="assets/images/menu/media-2-lg.jpg">
+                                            <span class="mask-inner">
+                                                <span class="item-title script">Wild Salmon</span>
+                                                <span class="desc">Description about the dish goes here lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor aenean massa.</span>
+                                                <span class="price">£28</span>
+                                            </span><!--//mask-inner-->
+                                        </a><!--//mask-->
+                                    </div><!--//media-item-inner-->
+                                </div><!--//media-item-->
+                            </div>
+                            <div class="col-12 col-md-6"> 
+                                <div class="media-item">
+                                    <div class="media-item-inner">
+                                        <img class="img-fluid" src="assets/images/menu/media-3.jpg" alt="">
+                                        <a class="mask" href="assets/images/menu/media-3-lg.jpg">
+                                            <span class="mask-inner">
+                                                <span class="item-title script">Crab and Avacado Salad</span>
+                                                <span class="desc">Description about the dish goes here lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor aenean massa.</span>
+                                                <span class="price">£16</span>
+                                            </span><!--//mask-inner-->
+                                        </a><!--//mask-->
+                                    </div><!--//media-item-inner-->
+                                </div><!--//media-item-->
+                            </div>
+                        </div><!--//row-->
+                    </div>
+                    
+                    <div class="col-right col-12 col-md-4">
+                        <div class="media-item">
+                            <div class="media-item-inner">
+                                <img class="img-fluid" src="assets/images/menu/media-4.jpg" alt="">
+                                <a class="mask" href="assets/images/menu/media-4-lg.jpg">
+                                    <span class="mask-inner">
+                                        <span class="item-title script">Ocean Seafood Platter</span>
+                                        <span class="desc">Description about the dish goes here lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor aenean massa.</span>
+                                        <span class="price">£32</span>
+                                    </span><!--//mask-inner-->
+                                </a><!--//mask-->
+                            </div><!--//media-item-inner-->
+                        </div><!--//media-item-->
+                        
+                        <div class="media-item">
+                            <div class="media-item-inner">
+                                <img class="img-fluid" src="assets/images/menu/media-5.jpg" alt="">
+                                <a class="mask" href="assets/images/menu/media-5-lg.jpg">
+                                    <span class="mask-inner">
+                                        <span class="item-title script">Duo of Lamb</span>
+                                        <span class="desc">Description about the dish goes here lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor aenean massa.</span>
+                                        <span class="price">£36</span>
+                                    </span><!--//mask-inner-->
+                                </a><!--//mask-->
+                            </div><!--//media-item-inner-->
+                        </div><!--//media-item-->
+                    </div><!--//col-right-->
+
+                </div><!--//media-wrapper-->
+            </div><!--//featured-->
+        </div><!--//container-->
+    </div><!--//menus-section-->
+        
+    <!-- ******News section****** -->
+    <div id="news" class="news-section">
+        <div class="container text-center">
+            <h2 class="section-title">
+                <span class="script">Latest</span>
+                <span class="title-text">News &amp; Events</span>
+                <span class="title-border"></span>
+            </h2>
+            <div class="row text-start">
+                <div class="news-wrapper col-md-8 col-12 ms-md-auto me-md-auto">
+                    <div class="item">
+                        <h4 class="title">Wine Tasting</h4>
+                        <div class="meta">Saturday, 17th August</div>
+                        <p class="excerpt">
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis.
+                        </p><!--//excerpt-->
+                        <a href="index.html#" class="more-link" data-bs-toggle="modal" data-bs-target="#news-modal-1">Read more</a>
+                        <div class="date-badge">
+                            <span class="month">AUG</span>
+                            <span class="date">17</span>
+                        </div><!--/date-badge-->
+                    </div><!--//item-->
+                    <div class="item">
+                        <h4 class="title">Cooking Lesson</h4>
+                        <div class="meta">Saturday, 8th July</div>
+                        <p class="excerpt">
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis.
+                        </p><!--//excerpt-->
+                        <a href="index.html#" class="more-link" data-bs-toggle="modal" data-bs-target="#news-modal-2">Read more</a>
+                        <div class="date-badge">
+                            <span class="month">JUL</span>
+                            <span class="date">08</span>
+                        </div><!--/date-badge-->
+                    </div><!--//item-->
+                    <div class="item">
+                        <h4 class="title">Exclusive Offers</h4>
+                        <div class="meta">Tuesday, 1st June</div>
+                        <p class="excerpt">
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis.
+                        </p><!--//excerpt-->
+                        <a href="index.html#" class="more-link" data-bs-toggle="modal" data-bs-target="#news-modal-3">Read more</a>
+                        <div class="date-badge">
+                            <span class="month">JUN</span>
+                            <span class="date">01</span>
+                        </div><!--/date-badge-->
+                    </div><!--//item-->
+                </div><!--//col-news-->
+            </div><!--//row-->
+        </div><!--//container-->
+    </div><!--//news-section-->
+
+    <!-- ******About section****** -->
+    <div id="about" class="about-section">
+        <div class="container text-center">
+            <h2 class="section-title">
+                <span class="script">Our Story</span>
+                <span class="title-text">Behind The Scenes</span>
+                <span class="title-border"></span>
+            </h2>
+            <div class="intro ms-auto me-auto">
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.</p>
+            </div>
+            <div class="suppliers">
+                <h3 class="title script">Our Suppliers</h3>
+                <div class="supplier-list ms-auto me-auto">
+                    <div class="supplier-type">
+                        <h4 class="type-title">Meat</h4>
+                        <ul class="list-unstyled">
+                            <li>Anderson Meat</li>
+                            <li>Sheppard John</li>
+                        </ul>
+                    </div><!--//supplier-type-->
+                    <div class="supplier-type">
+                        <h4 class="type-title">Fish</h4>
+                        <ul class="list-unstyled">
+                            <li>M&amp;T Seafood</li>
+                            <li>Collins Seafoods</li>
+                        </ul>
+                    </div><!--//supplier-type-->
+                    <div class="supplier-type">
+                        <h4 class="type-title">Fruit &amp; Veg</h4>
+                        <ul class="list-unstyled">
+                            <li>The Farm</li>
+                            <li>Fruitdrop Ltd</li>
+                        </ul>
+                    </div><!--//supplier-type-->
+                </div><!--//supplier-list-->
+            </div><!--//suppliers-->
+            <a class="btn btn-theme-secondary text-center" href="assets/media/pdf-file.pdf" target="_blank">View full supplier list</a>
+        </div><!--//container-->
+    </div><!--//about-section-->
+    
+    <div id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title text-center">
+                <span class="script">Contact Us</span>
+                <span class="title-text">Get in Touch</span>
+                <span class="title-border"></span>
+            </h2>
+            <div class="contact-content">
+                <div class="row">
+                    <div class="map-col col-12 col-md-6">
+                        <div id="map" class="map-container">
+                            <!--//You need to embed your own google map below-->
+                            <!--//Ref: https://support.google.com/maps/answer/144361?co=GENIE.Platform%3DDesktop&hl=en -->
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d79461.78853986299!2d-0.22087714166825928!3d51.50989724581101!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876052ddef3fe71%3A0x7f465130c3e2cba7!2sScott&#39;s!5e0!3m2!1sen!2suk!4v1469620593905" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                            
+                        </div><!--//map-->
+                    </div><!--//map-col-->
+                    <div class="info-col col-12 col-md-6">
+                        <div class="row">
+                            <div class="col-12 col-lg-6">
+                                <div class="general">
+                                    <h4 class="title">Come to find us</h4>
+                                    <div class="adr-group">       
+                                        <span class="street-address">68 King Street</span><br>
+                                        <span class="city">London</span><br>
+                                        <span class="postal-code">SW1Y 8DJ</span><br>
+                                        <span class="country-name">London</span>
+                                    </div>
+                                    <div class="contact-methods">
+                                        <h5 class="subtitle">General Enquiries</h5>
+                                        <ul class="list-unstyled">
+                                            <li><i class="fas fa-envelope"></i> <a href="index.html#">info@website.com</a></li>
+                                            <li><i class="fas fa-phone"></i> <a href="tel:0800123456">0800 123 456</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="contact-reserve">
+                                        <h5 class="subtitle" >Want to book a table?</h5>
+                                        <button type="button" class="btn btn-theme-primary" data-bs-toggle="modal" data-bs-target="#reserve-modal">Book Now</button>
+                                    </div>
+                                </div><!--//general-->
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <div class="press">
+                                    <h4 class="title">Press Enquiries</h4>
+                                    <p>Please contact us for any press related enquiries</p>
+                                    <p><i class="fas fa-envelope"></i> <a href="index.html#">press@website.com</a></p>
+                                    <p><a class="btn btn-theme-secondary" href="index.html#">Download Press Kit</a></p>
+                                </div><!--//press-->
+                            </div>
+                        </div><!--//row-->
+                    </div><!--//info-col-->
+                </div><!--//row-->
+            </div><!--//contact-content-->
+        </div><!--//container-->
+    </div><!--//contact-section-->
+    
+    <!-- ******FOOTER****** --> 
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col col-12 col-md-6 col-lg-3">
+                        <div class="footer-col-inner">
+                            <h3 class="title">Opening Time</h3>
+                            <ul class="list-unstyled">
+                                <li class="mb-3"><span>Mon - Fri:</span> 08:00 - 22:30</li>
+                                <li class="mb-3"><span>Sat:</span> 09:00 - 23:00</li>
+                                <li><span>Sun:</span> 09:00 - 22:30</li>
+                            </ul>
+                        </div><!--//footer-col-inner-->
+                    </div><!--//footer-col-->
+                    <div class="footer-col col-12 col-md-6 col-lg-6">
+                        <div class="footer-col-inner">
+                            <h3 class="title">Newsletter</h3>
+                            <p>Subscribe to our newsletter to get the latest offers and news.</p>  
+                            <form class="subscribe-form">
+                                <div class="row g-0">
+	                                <div class="col-12 col-md-auto">
+	                                    <label class="sr-only" for="semail">Your Email</label>
+	                                    <input type="text" id="semail" class="form-control email-field" placeholder="Enter your email address" name="email" required="" aria-required="true">
+	                                </div>
+	                                <div class="col-12 col-md-auto">
+                                        <button type="submit" class="btn btn-theme-primary">Subscribe</button>  
+	                                </div>
+                                </div>                              
+                            </form><!--//subscribe-form-->                                      
+                        </div><!--//footer-col-inner-->
+                    </div><!--//foooter-col--> 
+                    <div class="footer-col col-12 col-lg-3">
+                        <div class="footer-col-inner">
+                            <h3 class="title">Follow us</h3> 
+                            <ul class="social-icons list-inline">
+                                <li class="list-inline-item"><a href="https://twitter.com/3rdwave_themes" target="_blank"><i class="fab fa-twitter"></i></a></li>                        
+                                <li class="list-inline-item"><a href="https://www.facebook.com/3rdwavethemes" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                                <li class="list-inline-item"><a href="index.html#"><i class="fab fa-instagram"></i></a></li>
+                                <li class="last list-inline-item"><a href="index.html#"><i class="fab fa-pinterest"></i></a></li>                     
+                            </ul>                                     
+                        </div><!--//footer-col-inner-->
+                    </div><!--//foooter-col--> 
+                </div>   
+            </div>        
+        </div><!--//footer-content-->
+        <div class="bottom-bar">
+            <div class="container text-center">                                   
+                <ul class="list-inline links">
+                    <li class="list-inline-item"><a href="index.html#">Privacy Policy</a></li>
+                    <li class="list-inline-item" role="presentation">|</li>
+                    <li class="list-inline-item"><a href="index.html#">Terms &amp; Conditions</a></li>
+                </ul>
+                <small class="copyright text-center">Template Copyright @ <a href="../../../index.html" target="_blank">3rd Wave Media</a></small>                 
+            </div><!--//container-->
+        </div><!--//bottom-bar-->
+    </footer><!--//footer-->
+   
+    
+    <!-- Reserve Modal -->
+    <div id="reserve-modal" class="modal modal-reserve"  tabindex="-1" role="dialog" aria-labelledby="reserveModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h2 id="reserveModalLabel" class="modal-title text-center">
+                        <span class="script">Reservations</span>
+                        <span class="title-text">Book a Table</span>
+                        <span class="title-border"></span>
+                    </h2>
+                    
+                </div><!--//modal-header-->
+                <div class="modal-body">
+                    <div class="intro text-center">
+                        <p class="blurb">Call us now to book a table</p>
+                        <p class="phone subtitle">0800 123 456</p>
+                        <hr>
+                        <p class="booking-intro">Or book online</p>
+                    </div>
+                    <form id="reserve-form" class="reserve-form form" method="post" action="index.html">
+                        <div id="form-messages"></div>              
+                        <div class="row text-center g-3">
+                            <div class="datepicker-group col-12 col-md-6 form-group">
+                                <div class="form-group-inner">
+                                    <i class="fas fa-calendar"></i>
+                                    <label class="sr-only" for="cdate">Date</label>
+                                    <input type="text" id="cdate" class="form-control add-padding datepicker-input" placeholder="mm/dd/yyyy" name="date" autocomplete="off" required>
+                                </div>
+                            </div>    
+                            <div class="timepicker-group col-12 col-md-6 form-group">
+                                <div class="form-group-inner">
+                                    <i class="fas fa-clock"></i>
+                                    <label class="sr-only" for="ctime">Time</label>
+                                    <select class="form-control add-padding" id="ctime" name="time" required>
+										<option value="" selected>Select time</option>
+										<option value="11:00">11:00</option>
+										<option value="12:00">12:00</option>
+										<option value="13:00">13:00</option>
+										<option value="14:00">14:00</option>
+										<option value="15:00">15:00</option>
+										<option value="16:00">16:00</option>
+										<option value="17:00">17:00</option>
+										<option value="18:00">18:00</option>
+										<option value="19:00">19:00</option>
+										<option value="20:00">20:00</option>
+										
+                                    </select>   
+                                </div>
+                            </div>   
+                            <div class="guest-group col-12 col-md-6 form-group">
+                                <div class="form-group-inner">
+                                    <i class="fas fa-users"></i>
+                                    <label class="sr-only" for="cguests">Guests</label>
+                                    <select class="form-control add-padding" id="cguests" name="guests" required>
+										<option value="" selected>Select number of people</option>
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5</option>
+										<option value="6">6</option>
+										<option value="7">7</option>
+										<option value="8">8</option>
+										<option value="9">9</option>
+										<option value="10">10</option>
+										<option value="11">11</option>
+										<option value="12">12</option>
+										<option value="13">13</option>
+										<option value="14">14</option>
+										<option value="15">15</option>
+										<option value="16">16</option>
+										<option value="17">17</option>
+										<option value="18">18</option>
+										<option value="19">19</option>
+										<option value="20">20</option>
+										<option value="20+">20+</option>
+                                    </select>   
+                                </div>       
+                            </div>         
+                                                                                         
+                            <div class="name-group col-12 col-md-6 form-group">
+                                <div class="form-group-inner">
+                                    <i class="fas fa-user"></i>
+                                    <label class="sr-only" for="cname">Name</label>
+                                    <input type="text" class="form-control add-padding" id="cname" name="name" placeholder="Your name" minlength="2" required>
+                                </div>
+                            </div>                    
+                            <div class="email-group col-12 col-md-6 form-group">
+                                <div class="form-group-inner">
+                                    <i class="fas fa-envelope"></i>
+                                    <label class="sr-only" for="cemail">Email</label>
+                                    <input type="email" class="form-control add-padding" id="cemail" name="email" placeholder="Email Address" required>
+                                </div>
+                            </div>
+                            <div class="phone-group col-12 col-md-6 form-group">
+                                <div class="form-group-inner">
+                                    <i class="fas fa-phone"></i>
+                                    <label class="sr-only" for="cphone">Phone</label>
+                                    <input type="tel" class="form-control add-padding" id="cphone" name="phone" placeholder="Phone Number" required>
+                                </div>
+                            </div>
+                             <div class="col-12 form-group">
+                                <button type="submit" class="btn btn-block btn-theme-primary">Book Now</button>
+                            </div>                           
+                        </div><!--//row-->
+                    </form><!--//reserve-form-->
+                </div><!--//modal-body-->
+            </div><!--//modal-content-->
+        </div><!--//modal-dialog-->
+    </div><!--//modal-->
+    
+    
+    <!-- News Modal 1-->
+    <div id="news-modal-1" class="news-modal modal modal-fullscreen" tabindex="-1" role="dialog" aria-labelledby="newsModal1Label">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title text-center" id="newsModal1Label">Wine Tasting </h4>
+                    
+                </div><!--//modal-header-->
+                <div class="modal-body">
+                    <div class="meta text-center">Saturday, 17th August</div>
+                    <div class="post">
+                        <p><img class="img-fluid" src="assets/images/news/news-1.jpg" alt="" /></p>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+                        <p>Maecenas ac turpis sit amet leo semper ultricies lobortis sed purus. Integer erat felis, maximus in placerat vel, fermentum a libero. Ut quis mollis est. Pellentesque semper nibh ut scelerisque tincidunt. Nullam commodo quam eu lectus ullamcorper, quis sagittis ligula sagittis. Fusce id pellentesque risus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.</p>
+                    </div>
+                </div><!--//modal-body-->
+                <div class="modal-footer text-center">
+                    <button type="button" class="btn btn-theme-primary me-auto ms-auto" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div><!--//modal-content-->
+        </div>
+    </div><!--//modal-->
+    
+    <!-- News Modal 2-->
+    <div id="news-modal-2" class="news-modal modal modal-fullscreen" tabindex="-1" role="dialog" aria-labelledby="newsModal2Label">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title text-center" id="newsModal2Label">Cooking Lesson</h4>
+                    
+                </div><!--//modal-header-->
+                <div class="modal-body">
+                    <div class="meta text-center">Saturday, 8th July</div>
+                    <div class="post">
+                        <p><img class="img-fluid" src="assets/images/news/news-2.jpg" alt="" /></p>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+                        <p>Maecenas ac turpis sit amet leo semper ultricies lobortis sed purus. Integer erat felis, maximus in placerat vel, fermentum a libero. Ut quis mollis est. Pellentesque semper nibh ut scelerisque tincidunt. Nullam commodo quam eu lectus ullamcorper, quis sagittis ligula sagittis. Fusce id pellentesque risus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.</p>
+                        <p>Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum.</p>
+                    </div>
+                </div><!--//modal-body-->
+                <div class="modal-footer text-center">
+                    <button type="button" class="btn btn-theme-primary ms-auto me-auto" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div><!--//modal-content-->
+        </div>
+    </div><!--//modal-->
+    
+    <!-- News Modal 3-->
+    <div id="news-modal-3" class="news-modal modal modal-fullscreen" tabindex="-1" role="dialog" aria-labelledby="newsModal3Label">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title text-center" id="newsModal3Label">Exclusive Offers</h4>
+                    
+                </div><!--//modal-header-->
+                <div class="modal-body">
+                    <div class="meta text-center">Tuesday, 1st June</div>
+                    <div class="post">
+                        <p><img class="img-fluid" src="assets/images/news/news-3.jpg" alt="" /></p>
+                        <p>Suspendisse et accumsan velit, non sollicitudin nisl. Donec dapibus augue eu viverra eleifend. Etiam finibus eu arcu nec tempus. Sed luctus metus leo, non pellentesque tortor tempor aliquam. Sed sit amet egestas est. Sed varius, urna ac bibendum porta, nunc risus suscipit turpis, sed condimentum neque metus non purus. Quisque volutpat nulla dignissim diam malesuada, id tincidunt orci scelerisque. Phasellus est orci, varius sit amet imperdiet ac, faucibus id urna. Mauris varius odio et nisl finibus, sed fringilla ligula eleifend.</p>
+                        <p>Curabitur volutpat bibendum mi sed hendrerit. Etiam commodo molestie facilisis. Nulla sed lectus eu metus consequat vehicula eu ac justo. Phasellus posuere vehicula rhoncus. Praesent a molestie tortor. Phasellus ornare imperdiet vehicula. Vivamus nec odio vitae ligula semper facilisis quis id odio.</p>
+                    </div>
+                </div><!--//modal-body-->
+                <div class="modal-footer text-center">
+                    <button type="button" class="btn btn-theme-primary ms-auto me-auto" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div><!--//modal-content-->
+        </div>
+    </div><!--//modal-->
+    
+    <!-- *****CONFIGURE STYLE (REMOVE ON YOUR PRODUCTION SITE)****** -->  
+    <div id="config-panel" class="config-panel config-panel-hide d-none d-lg-block">
+	    <div class="panel-inner">
+	        <a id="config-trigger" class="config-trigger" href="index.html#"><i class="fas fa-cog mx-auto"></i></a>
+	        <h5 class="panel-title">Choose Colour</h5>
+            <ul id="color-options" class="list-unstyled list-inline">
+                    <li class="theme-1 active list-inline-item" ><a data-style="assets/css/theme-1.css" href="index.html#"></a></li>
+                    <li class="theme-2 list-inline-item"><a data-style="assets/css/theme-2.css" href="index.html#"></a></li>
+                    <li class="theme-3 list-inline-item"><a data-style="assets/css/theme-3.css" href="index.html#"></a></li>
+                    <li class="theme-4 list-inline-item"><a data-style="assets/css/theme-4.css" href="index.html#"></a></li>                   
+                    <li class="theme-5 list-inline-item"><a data-style="assets/css/theme-5.css" href="index.html#"></a></li>                     
+                    <li class="theme-6 list-inline-item"><a data-style="assets/css/theme-6.css" href="index.html#"></a></li>
+                    <li class="theme-7 list-inline-item"><a data-style="assets/css/theme-7.css" href="index.html#"></a></li>
+                    <li class="theme-8 list-inline-item"><a data-style="assets/css/theme-8.css" href="index.html#"></a></li>                    
+                    <li class="theme-9 list-inline-item"><a data-style="assets/css/theme-9.css" href="index.html#"></a></li>
+                    <li class="theme-10 list-inline-item"><a data-style="assets/css/theme-10.css" href="index.html#"></a></li>
+                </ul><!--//color-options-->
+            <a id="config-close" class="close" href="index.html#"><i class="fa-solid fa-circle-xmark"></i></a>
+        </div><!--//panel-inner-->
+    </div><!--//configure-panel-->
+ 
+    <!-- Main Javascript -->          
+    <script src="assets/plugins/popper.min.js"></script> 
+    <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/plugins/vanilla-back-to-top.min.js"></script> 
+    <script src="assets/plugins/smoothscroll.min.js"></script>
+    <script src="assets/plugins/simplelightbox/dist/simple-lightbox.min.js"></script> 
+    <script src="assets/plugins/gumshoe/gumshoe.polyfills.min.js"></script> 
+    <script src="assets/plugins/vanillajs-datepicker/js/datepicker.min.js"></script>
+    <script src="assets/js/main.js"></script>
+        
+    <!-- Style Switcher (REMOVE ON YOUR PRODUCTION SITE) -->
+    <script src="assets/js/demo/style-switcher.js"></script>
+    
+</body>
+</html> 
+

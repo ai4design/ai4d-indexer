@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Academy - Bootstrap 5 website template for education</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">    
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico|Source+Sans+Pro:300,300i,400,400i,600,600i,700,700i,900,900i|Source+Serif+Pro:400,600,700" rel="stylesheet">
+    <!-- FontAwesome JS -->
+    <script defer src="assets/fontawesome/js/all.js"></script>
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">   
+    
+    <!-- Theme CSS -->
+    <link id="theme-style" rel="stylesheet" href="assets/css/theme-1.css">
+</head> 
+
+<body class="calendar-page">   
+    <!-- ******HEADER****** --> 
+    <header id="header" class="header">  
+        <div class="top-bar container-fluid">
+            <nav class="main-nav navbar navbar-expand-md" role="navigation">
+               
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-collapse">
+                    <span> </span>
+                    <span> </span>
+                    <span> </span>
+                </button>
+                
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="news.html">News &amp; Events</a></li>
+                        <li class="nav-item"><a class="nav-link" href="admissions.html">Admissions</a></li>
+                        <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="dropdown-toggle nav-link" data-bs-toggle="dropdown">More Pages <i class="fas fa-angle-down"></i></a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="staff.html">School Staff</a>
+                                <a class="dropdown-item" href="fees.html">School Fees</a>
+                                <a class="active dropdown-item" href="calendar.html">School Calendar</a>
+                                <a class="dropdown-item" href="docs.html">School Docs</a>
+                                <a class="dropdown-item" href="gallery.html">Gallery</a>
+                                <a class="dropdown-item" href="gallery-single.html">Gallery Album</a>
+                                <a class="dropdown-item" href="blog-single.html">Blog Single</a>
+                                <a class="dropdown-item" href="jobs.html">Job Vacancies</a>
+                                <a class="dropdown-item" href="job-single.html">Job Single</a>  
+                                <a class="dropdown-item" href="privacy.html">Privacy Policy</a>   
+                                <a class="dropdown-item" href="terms.html">Terms and Conditions</a>             
+                            </div>                            
+                        </li><!--//dropdown-->       
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>                   
+                    </ul><!--//nav-->
+                </div><!--//navabr-collapse-->
+            </nav><!--//main-nav-->
+        </div><!--//top-bar-->
+        <div class="branding">     
+            <div class="container">
+                <h1 class="logo">
+                    <a href="index.html"><img src="assets/images/logo.png" alt=""></a>
+                </h1><!--//logo-->
+                <h2 class="tagline">Unlock potential and aim higher</h2>
+            </div><!--//container-->                    
+        </div><!--//branding-->
+    </header><!--//header-->     
+    
+    <section class="page-hero">
+         <div class="hero-page-title container">
+             <h1>School Calendar</h1>
+         </div>
+         <div class="mask"></div>
+    </section><!--//page-hero-->
+    
+    <div class="breadcrumb-container">
+        <div class="container">
+	        <nav aria-label="breadcrumb">
+	            <ol class="breadcrumb">
+	              <li class="breadcrumb-item"><i class="fas fa-home" aria-hidden="true"></i> <a href="index.html">Home</a></li>
+	              <li class="breadcrumb-item active">Calendar</li>
+	            </ol>
+	        </nav>
+        </div><!--//container-->
+    </div><!--//breadcrumb-container-->
+    
+    <div class="main-cols-wrapper">
+        <div class="container">
+            <div class="block calendar-block">
+                     
+                <div class="module-wrapper calendar-wrapper">  
+                    <section class="module module-headings">
+                        <div class="module-inner">
+                            <div class="module-heading">
+                                <h3 class="module-title">School Calendar</h3>
+                                <div class="mb-3">You can <a href="https://support.google.com/calendar/answer/41207?hl=en" target="_blank">create and embed</a> your own Google Calendar on this page. </div>
+                                <div class="ratio ratio-4x3"><iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=2&amp;bgcolor=%23ffffff&amp;ctz=Europe%2FLondon&amp;src=Y19mOG9iZ2Jmb2VlbnV1ODRiZHQzN3NzdWU5MEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%23D81B60&amp;mode=WEEK&amp;showCalendars=0&amp;showTz=0" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe></div>
+                            </div><!--//heading-->
+                            <div class="module-content collapse in" id="content-1">
+                                <div class="module-content-inner padding-sm">
+                                    <div id="calendar"></div>
+                                </div><!--//module-content-inner-->
+                            </div><!--//content-->     
+                        </div><!--//module-inner-->
+                    </section><!--//module-->
+                </div><!--//module-wrapper-->    
+            
+            </div><!--//block-->
+        </div><!--//container-->
+    </div><!--//main-cols-wrapper-->
+    
+    <!-- ******FOOTER****** --> 
+    <footer class="footer">
+        <div class="container">
+                <div class="row">
+                    <div class="footer-col col-12 col-lg-4">
+                        <div class="logo-holder">
+                            <img src="assets/images/logo.png" alt="">
+                        </div><!--//logo-holder-->
+                        <div class="contact-details">
+                            <div class="address">
+                               Academy Grammar School<br>56 Kingston Road, London, KT2 6PY
+                            </div><!--//address-->
+                            <div class="contact">
+                                <div class="item">T: <a href="calendar.html#">0800 123 4567</a></div>
+                                <div class="item">E: <a href="calendar.html#">info@yourschool.com</a></div>
+                            </div><!--//contact-->
+                        </div>
+                    </div><!--//footer-col-->
+                    <div class="footer-col col-12 col-lg-8">
+                        <div class="footer-links row">
+                            <div class="sub-col col-12 col-md-4">
+                                <h4 class="col-title">About Us</h4>
+                                <ul class="footer-links list-unstyled">
+                                    <li class="link-item"><a href="calendar.html#">The School</a></li>
+                                    <li class="link-item"><a href="calendar.html#">Governors</a></li>
+                                    <li class="link-item"><a href="calendar.html#">Teachers</a></li>
+                                    <li class="link-item"><a href="calendar.html#">Admissions</a></li>
+                                </ul>
+                            </div><!--//sub-col-->
+                            <div class="sub-col col-12 col-md-4">
+                                <h4 class="col-title">School Life</h4>
+                                <ul class="footer-links list-unstyled">
+                                    <li class="link-item"><a href="calendar.html#">e-Portal</a></li>
+                                    <li class="link-item"><a href="calendar.html#">OFSTED Reports</a></li>
+                                    <li class="link-item"><a href="calendar.html#">School Policies</a></li>
+                                    <li class="link-item"><a href="calendar.html#">Vacancies</a></li>
+                                </ul>
+                            </div><!--//sub-col-->
+                            <div class="sub-col col-12 col-md-4">
+                                <h4 class="col-title">Useful Links</h4>
+                                <ul class="footer-links list-unstyled">
+                                    <li class="link-item"><a href="calendar.html#">Contact</a></li>
+                                    <li class="link-item"><a href="calendar.html#">FAQs</a></li>
+                                    <li class="link-item"><a href="calendar.html#">Privacy Policy</a></li>
+                                    <li class="link-item"><a href="calendar.html#">Terms and Conditions</a></li>
+                                </ul>
+                            </div><!--//sub-col-->
+                        </div><!--//row-->
+                        <div class="divider"></div>
+                        <ul class="social-media list-inline">
+                            <li class="list-inline-item"><a href="calendar.html#"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                            <li class="list-inline-item"><a href="calendar.html#"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+                            <li class="list-inline-item"><a href="calendar.html#"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+                            <li class="list-inline-item"><a href="calendar.html#"><i class="fab fa-vimeo" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div><!--//footer-col-->
+                </div><!--//row-->
+                <div>
+                    <small class="copyright">Template Copyright @ <a href="../../index.html" target="_blank">3rd Wave Media</a></small> 
+                </div>
+       
+        </div><!--//container-->
+    </footer><!--//footer-->
+    
+    <!-- FullCalendar Modal -->
+    <div id="fullCalModal" class="calendar-modal modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 id="modalTitle" class="modal-title"></h4>
+                </div>
+                <div id="modalBody" class="modal-body"></div>
+                <div class="modal-footer justify-content-center">
+                    <button type="button" class="btn btn-ghost-alt" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div><!--//fullCalModal-->
+        
+    <!-- *****CONFIGURE STYLE (REMOVE ON YOUR PRODUCTION SITE)****** -->  
+    <div id="config-panel" class="config-panel config-panel-hide d-none d-lg-block">
+	    <div class="panel-inner">
+	        <a id="config-trigger" class="config-trigger" href="calendar.html#"><i class="fas fa-cog mx-auto"></i></a>
+	        <h5 class="panel-title">Choose Colour</h5>
+            <ul id="color-options" class="list-unstyled list-inline">
+                    <li class="theme-1 active list-inline-item" ><a data-style="assets/css/theme-1.css" href="calendar.html#"></a></li>
+                    <li class="theme-2 list-inline-item"><a data-style="assets/css/theme-2.css" href="calendar.html#"></a></li>
+                    <li class="theme-3 list-inline-item"><a data-style="assets/css/theme-3.css" href="calendar.html#"></a></li>
+                    <li class="theme-4 list-inline-item"><a data-style="assets/css/theme-4.css" href="calendar.html#"></a></li>  
+                </ul><!--//color-options-->
+            <a id="config-close" class="close" href="calendar.html#"><i class="fas fa-times-circle"></i></a>
+        </div><!--//panel-inner-->
+    </div><!--//configure-panel-->
+ 
+ 
+    <!-- Javascript -->          
+    <script src="assets/plugins/popper.min.js"></script> 
+    <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/plugins/vanilla-back-to-top.min.js"></script> 
+    <script src="assets/plugins/smoothscroll.min.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    
+    <!-- Style Switcher (REMOVE ON YOUR PRODUCTION SITE) -->
+    <script src="assets/js/demo/style-switcher.js"></script>
+            
+</body>
+</html> 
+
